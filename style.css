@@ -199,7 +199,7 @@ nav {
         padding: 1rem;
     } */
     .header-illustration img {
-        /* min-width: 500px; */
+        min-width: 450px;
         width: 100%;
     }
     .header-content {
