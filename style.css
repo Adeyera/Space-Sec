@@ -44,6 +44,9 @@ nav {
 .logo {
     flex-basis: 50%;
 }
+.logo-mobile {
+    display: none;
+}
 .nav-container {
     flex-basis: 50%;
     display: flex;
@@ -85,7 +88,7 @@ nav {
 .header-text {
     display: flex;
     flex-direction: column;
-    flex-basis: 40%;
+    flex-basis: 45%;
     padding-left: 2rem;
 }
 .header-text img {
@@ -116,7 +119,6 @@ nav {
     justify-content: center;
     align-items: center;
     color: #F2994A;
-    column-gap: 20px;
     padding: 10px 2rem;
     background-color: transparent;
     border: 1px solid #FFFFFF;
@@ -133,6 +135,7 @@ nav {
 }
 .header-text button .iconify {
     font-size: 30px;
+    margin-left: 20px;
 }
 .scroll-anime {
     display: flex;
@@ -145,7 +148,7 @@ nav {
     margin-top: 1rem;
 }
 .header-illustration {
-    flex-basis: 60%;
+    flex-basis: 55%;
 
 }
 .header-illustration img {
@@ -173,10 +176,14 @@ nav {
         justify-content: flex-end;
     }
     .hamburger .iconify {
-        font-size: 50px;
+        font-size: 40px;
     }
     .logo {
+        display: none;
         flex-basis: 80%;
+    }
+    .logo-mobile {
+        display: flex;
     }
     .nav-container {
         flex-basis: 20%;
@@ -543,7 +550,7 @@ nav {
      min-height: 360px;
      background-color: #042D7D;
     border-radius: 20px;
-    padding: 2rem 3rem;
+    padding: .5rem 3rem;
      margin: 4rem 10rem;
  }
  .contact-text {
@@ -571,7 +578,8 @@ nav {
     max-width: 300px;
     margin-top: 2rem;
  }
-.contact-text button {
+.contact-text button, 
+.footer-about button {
     font-family: "proxima-nova";
     display:flex;
     justify-content: center;
@@ -629,11 +637,95 @@ nav {
 
  footer {
      display: flex;
+     padding: 4rem;
+    justify-content: space-between;
  }
-
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+.footer-about h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.footer-about p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 149.5%;
+    color: #ABB3C3;
+    margin-top: 1rem;
+}
+.footer-about button {
+    margin-top: 2rem;
+}
+.footer-nav {
+    display: flex;
+    column-gap: 8rem;
+}
+.company-nav, .resources-nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.company-nav h6, .resources-nav h6{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    margin-bottom: 1.5rem;
+}
+.company-nav ul, .resources-nav ul {
+    display: flex;
+    flex-direction: column;
+}
+.company-nav li, .resources-nav li {
+    margin-bottom: 1rem;
+}
+.company-nav a, .resources-nav a {
+    font-size: 15px;
+    color: #fff;
+}
+.footer-logo-sm {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer-logo img {
+    width: min-content;
+}
+.footer-logo p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 27px;
+}
+.sm-handle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.sm-handle .iconify {
+    font-size: 24px;
+}
  @media screen and (max-width: 786px) {
      footer {
          flex-direction: column;
          text-align: center;
+         padding: 1rem;
      }
+
  }
