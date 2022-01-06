@@ -201,8 +201,8 @@ nav {
     }
     .header-text img {
         position: absolute;
-        left: 18%;
-        transform: translateX(25%);
+        left: 15%;
+        transform: translateX(15%);
     }
     .header-text h1 {
         text-align: center;
@@ -286,7 +286,7 @@ nav {
         margin-left: 0;
     }
     .about-header img {
-        left: 25%;
+        left: 20%;
         transform: translateX(20%);
     }
     .about-text {
@@ -598,8 +598,8 @@ nav {
      .contact-us-container {
          flex-direction: column;
          text-align: center;
-         margin: 4rem 1rem;
-         padding:  2rem 1rem !important;
+         margin: 4rem .5rem;
+         padding:  2rem .5rem !important;
      }
      .contact-text {
          margin: auto;
@@ -623,7 +623,7 @@ nav {
         margin: auto;
         margin-top: 3rem;
         flex-basis: unset;
-        /* transform: translateX(-10%); */
+        transform: translateX(-10%);
     }
  }
 
@@ -634,5 +634,6 @@ nav {
  @media screen and (max-width: 786px) {
      footer {
          flex-direction: column;
+         text-align: center;
      }
  }
