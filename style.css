@@ -522,6 +522,11 @@ nav {
 .spacesecsat-img {
     flex-basis: 50%;
 }
+.spacesecsat-img img{
+    object-fit: cover;
+    object-position: center;
+    transform: translateX(-100px);
+}
 @media screen and (max-width: 786px) {
     .spacesecsat-container {
         flex-direction: column;
