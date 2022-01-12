@@ -132,10 +132,10 @@ nav {
     margin-top: 30px;
 }
  li .hiring {
-    padding: 6px 1rem;
+    padding: 4px 1rem;
     background-color: #F2994A;
-    border-radius: 30px;
-    font-size: 12px;
+    border-radius: 24px;
+    font-size: 10px;
 }
 .header-text button p {
     color: #F2994A;
@@ -185,7 +185,7 @@ nav {
     }
     nav {
         padding: 1rem 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     .hamburger {
         display: flex;
@@ -193,7 +193,7 @@ nav {
         justify-content: flex-end;
     }
     .hamburger .iconify {
-        font-size: 48px;
+        font-size: 40px;
     }
     .logo {
         display: none;
@@ -201,10 +201,24 @@ nav {
     }
     .logo-mobile {
         display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
     }
-    .nav-container {
-        flex-basis: 20%;
+    .logo-mobile img {
+        width: 60px;
     }
+    .logo-mobile p {
+        font-style: normal;
+        font-weight: 500;
+        margin-left: 1rem;
+        font-size: 18px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+    /* .nav-container {
+        flex-basis: 10%;
+    } */
     .nav-container ul {
         display: none;
     }
@@ -238,6 +252,15 @@ nav {
     }
     .header-text button {
         margin: 30px 0px;
+        max-width: 180px;
+        padding: 8px 1rem;
+        height: 40px;
+    }
+    .header-text button p {
+        font-size: 16px;
+    }
+    .header-text button .iconify {
+        font-size:  24px;
     }
     .scroll-anime .iconify {
         margin: 1rem 0;
@@ -656,12 +679,18 @@ nav {
          line-height: 150%;
          text-align: left
      }
+     .trust div { 
+         width: 65px;
+         height: 65px;
+     }
+     .trust div .iconify {
+         font-size: 36px;
+     }
      .researches {
          row-gap: 2rem;
      }
      .researches .trust {
         min-width: 100%;
-
      }
  }
 
@@ -705,10 +734,11 @@ nav {
     display:flex;
     justify-content: center;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     width: 160px;
     padding: 14px 10px;
     margin-top: 2rem;
+    color: #fff;
     border:  2px solid #F2994A;
     background: #F2994A;
     border-radius: 42px;
@@ -736,16 +766,24 @@ nav {
     .contact-text h3 {
         font-size: 24px;
         line-height: 150%;
-        text-align: left;
+        text-align: center;
         margin-top: 2rem;
     }
     .contact-text p {
-        text-align: left;
+        text-align: center;
+        margin: auto;
         margin-top: 2rem;
     }
     .contact-text button {
-        width: 200px;
+        margin: auto;
+    }
+    .contact-text button, 
+    .footer-about button {
+        width: 150px;
         margin-top: 2rem;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 10px 10px;
     }
     .contact-illustration {
         margin: auto;
@@ -852,6 +890,10 @@ nav {
         justify-content: left;
         flex-direction: row;
         margin-top: 2rem;
+        column-gap: 0;
+    }
+    .resources-nav {
+        margin-left: auto;
     }
     .footer-about {
         text-align: left;
@@ -861,14 +903,13 @@ nav {
         text-align: left;
     }
     .company-nav a, .resources-nav a {
-
         text-align: left;
     }
     .footer-about button {
         margin-top: 2rem;
     }
     .footer-logo {
-        align-items:flex-start;
+        align-items: flex-start;
         margin-top: 2rem;
     }
     .sm-handle {
