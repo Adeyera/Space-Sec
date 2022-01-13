@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>Space Sec</title>
 </head>
 <body>
@@ -50,7 +51,8 @@
                 </div>
             </div>
             <div class="header-illustration">
-                <img src="./Images/illustration-1.svg" alt="">
+                <img src="./Images/illustration-10.svg" alt="">
+                <img class="animate-ill" src="./Images/illustration-1.svg" alt="">
             </div>
         </div>
     </header>
@@ -58,6 +60,7 @@
     <section class="about-space-sec">
         <div class="about-space-sec-illustration">
             <img src="./Images/illustration-2.svg" alt="">
+            <img class="animate-badgues" src="./Images/illustration-20.svg" alt="">
         </div>
         <div class="about">
             <div class="about-header">
@@ -100,19 +103,19 @@
                 <h4>Featured Project</h4>
             </div>
             <div class="feature">
-                <div>
+                <div data-aos="fade-up">
                     <p>CVBX-1</p>
                     <img src="./Images/feature-3.svg" alt="">
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <p>CYBP-1</p>
                     <img src="./Images/feature-2.svg" alt="">
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <p>CYBD-1</p>
                     <img src="./Images/feature-1.svg" alt="">
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <p>SCMP1</p>
                     <img src="./Images/feature-4.svg" alt="">
                 </div>
@@ -240,5 +243,14 @@
     <div class="copyright">
         <small>	&copy; 2022 SpaceSec Research and Development Lab, LLC.</small>
     </div>
+
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 240,
+        animatedClassName: 'aos-animate', 
+        duration: 1000 
+    });
+</script>
 </html>
